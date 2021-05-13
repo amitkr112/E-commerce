@@ -1,6 +1,7 @@
 const data = {
     products: [
         {
+            // Product Description
             id: '1',
             name: "Adidas Shirt",
             category: "Shirts",
