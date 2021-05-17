@@ -75,6 +75,7 @@ ul{
 li{
   margin-top: 1rem;
 }
+input,select,textarea,
 button{
   padding: 1rem;
   border-radius: 0.5rem;
@@ -83,14 +84,22 @@ button{
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+}
+button{
+  background-color: #f8f8f8;
   cursor: pointer;
 }
+
 button.primary{
   background-color: gold;
 }
 button.block{
   width: 100%;
 }
+input:hover,
+select:hover,
+textarea:hover,
 button:hover{
   border: 0.1rem solid rgb(0, 0, 0);
 }
@@ -106,6 +115,14 @@ a.brand{
   font-weight:bold;
 }
 
+.badge{
+  background-color: #f02020;
+  color:white ;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
 .row{
   display: flex;
   flex-wrap:wrap;
@@ -130,6 +147,9 @@ a.brand{
   flex:2 1 50rem;
 }
 
+.min-30{
+  min-width: 30rem;
+}
 /* IMAGES */
 img{
   border-radius: 0.5rem;
@@ -145,7 +165,10 @@ img.large{
   width: 100%;
 }
 
-
+img.small{
+  max-width: 5rem;
+  width: 100%;
+}
 .card{
   border:0.1rem grey solid;
   background-color: rgb(172, 170, 170);
