@@ -10,7 +10,7 @@ import Rating from '../components/Rating'
 export default function ProductScreen(props) {
     const dispatch = useDispatch();
     const productId = props.match.params.id;
-    const productDetails = useSelector(state => state.productDetails)
+    const productDetails = useSelector((state) => state.productDetails)
     const [qty, setQty] = useState(1)
     const { loading, error, product } = productDetails
     useEffect(() => {
@@ -40,7 +40,7 @@ export default function ProductScreen(props) {
                                             <Rating rating={product.rating} numReviews={product.numReviews}></Rating>
                                         </li>
                                         <li>
-                                            Price: {product.price}
+                                            Price: ${product.price}
                                         </li>
                                         <li>
                                             Description:{product.description}
